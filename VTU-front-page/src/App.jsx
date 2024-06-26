@@ -1,5 +1,5 @@
 import NavBar from './Components/NavBar/NavBar.jsx'
-
+import DegreeCard from './Components/DegreeCard/DegreeCard.jsx'
 
 function App() {
 
@@ -8,6 +8,7 @@ function App() {
     <>
         <NavBar/>
         <br/>
+        <DegreeCard/>
     </>
   )
 }

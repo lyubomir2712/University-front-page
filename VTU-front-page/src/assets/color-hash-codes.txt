@@ -1,0 +1,7 @@
+
+purple: #a282d5
+light-purple: #b29ad8
+
+light-yellow: #f9f3a9
+yellow: #f3df64
+dark-yellow: #f3df64
