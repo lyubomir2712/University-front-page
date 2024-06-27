@@ -1,0 +1,23 @@
+.footer{
+
+}
+
+.upperFooter{
+    height: 10vh;
+    width: 100%;
+    background-color: #b29ad8
+}
+
+.lowerFooter{
+    height: 10rem;
+    width: 100%;
+    background-color: #f3df64;
+}
+
+.upperFooterList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
