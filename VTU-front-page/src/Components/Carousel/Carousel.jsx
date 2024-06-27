@@ -54,19 +54,19 @@ function Carousel() {
 
     return (
         <Box sx={{ maxWidth: '100%', flexGrow: 1 }}>
-            {/*<Paper*/}
-            {/*    square*/}
-            {/*    elevation={0}*/}
-            {/*    sx={{*/}
-            {/*        display: 'flex',*/}
-            {/*        alignItems: 'center',*/}
-            {/*        height: 50,*/}
-            {/*        pl: 2,*/}
-            {/*        bgcolor: '#f3df64',*/}
-            {/*    }}*/}
-            {/*>*/}
-            {/*    <Typography>{images[activeStep].label}</Typography>*/}
-            {/*</Paper>*/}
+            <Paper
+                square
+                elevation={0}
+                sx={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    height: 50,
+                    pl: 2,
+                    bgcolor: '#b29ad8',
+                }}
+            >
+                <Typography>{images[activeStep].label}</Typography>
+            </Paper>
             <AutoPlaySwipeableViews
                 axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
                 index={activeStep}
@@ -97,12 +97,29 @@ function Carousel() {
                 steps={maxSteps}
                 position="static"
                 activeStep={activeStep}
-                sx={{bgcolor: '#f3df64'}}
+                sx={{bgcolor: '#b29ad8',
+                    '& .MuiMobileStepper-dot': {
+                        backgroundColor: 'white', //
+                    },
+                    '& .MuiMobileStepper-dotActive': {
+                        backgroundColor: 'purple', //
+                    },}}
                 nextButton={
                     <Button
                         size="small"
                         onClick={handleNext}
-                        disabled={activeStep === maxSteps - 1}
+                        disabled={activeStep === maxSteps - 1} sx={{
+                            color: 'purple',
+                            '&:hover': {
+                                backgroundColor: 'rgba(128,0,128,0.1)',
+                            },
+                            '&:focus': {
+                                backgroundColor: 'rgba(128,0,128,0.3)',
+                            },
+                            '& .MuiSvgIcon-root': {
+                                color: 'purple', // Change arrow color
+                            },
+                        }}
                     >
                         {/*Next*/}
                         {theme.direction === 'rtl' ? (
@@ -113,7 +130,20 @@ function Carousel() {
                     </Button>
                 }
                 backButton={
-                    <Button size="medium" onClick={handleBack} disabled={activeStep === 0}>
+                    <Button size="medium" onClick={handleBack} disabled={activeStep === 0}
+                            sx={{
+                                    color: 'purple',
+                                    '&:hover': {
+                                        backgroundColor: 'rgba(128,0,128,0.1)',
+                                    },
+                                    '&:focus': {
+                                        backgroundColor: 'rgba(128,0,128,0.3)',
+                                    },
+                                    '& .MuiSvgIcon-root': {
+                                        color: 'purple', // Change arrow color
+                                    },
+                                }}
+                    >
                         {theme.direction === 'rtl' ? (
                             <KeyboardArrowRight />
                         ) : (
