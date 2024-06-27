@@ -1,19 +1,21 @@
 import styles from "./DegreeCard.module.css";
-import PhDhat from "./../../assets/PhD-hat.png"
-import Laptop from "./../../../public/laptopLogo.webp"
+import PhDhat from "../../assets/PhD-yellow-hat.png"
+import MastersHat from './../../assets/Masters-purple-hat.png'
+import BachelorHat from './../../assets/Bachelor-hat-blue.png'
+import Laptop from "../../assets/Laptop-logo.png"
 
 
 function DegreeCard() {
     return (<div className={styles.cardContainer}>
             <div className={styles.card}>
-                <img className={styles.cardImage} src={PhDhat} alt="degree picture"></img>
+                <img className={styles.cardImage} src={BachelorHat} alt="degree picture"></img>
                 <hr/>
                 <h2 className={styles.cardTitle}>Бакалавърски програми</h2>
                 <p className={styles.cardText}>4 години</p>
             </div>
 
             <div className={styles.card}>
-                <img className={styles.cardImage} src={PhDhat} alt="degree picture"></img>
+                <img className={styles.cardImage} src={MastersHat} alt="degree picture"></img>
                 <hr/>
                 <h2 className={styles.cardTitle}>Магистърски програми</h2>
                 <p className={styles.cardText}>1.5 години</p>

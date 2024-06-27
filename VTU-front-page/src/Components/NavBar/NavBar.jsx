@@ -1,4 +1,4 @@
-import Logo from './../../assets/Logo.png'
+import Logo from './../../assets/LogoEdited.png'
 import styles from './NavBar.module.css'
 
 function NavBar(){
@@ -16,6 +16,8 @@ function NavBar(){
                 <li><a href={"#"} className={styles.link}>Международна дейност</a></li>
                 <li><a href={"#"} className={styles.link}>Кариери и завършили</a></li>
                 <li><a href={"#"} className={styles.link}>Контакти</a></li>
+                <li><a href={"#"} className={styles.link}>En</a></li>
+
             </ul>
         </nav>
     )
