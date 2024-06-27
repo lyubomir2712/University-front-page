@@ -76,15 +76,22 @@ input:nth-of-type(4):checked ~ label {
 }
 
 label {
-    background: blue;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHltZHYagklKPJyN6o5xSSwd2mzgGNoTCmRQ&s");
     background-size: cover;
-    font-size: 3rem;
+    /*font-size: 3rem;*/
 }
 
-label[for="diamonds"],
+label[for="spades"]{
+    background-image: url("https://www.uni-vt.bg/res/1261/image2[1].jpg");
+}
+
 label[for="hearts"] {
-    background: #cc0000;
+    background-image: url("https://boliarinews.bg/wp-content/uploads/2023/05/347251601_271969128546231_5193620626140022276_n.jpg");
+    background-size: cover;
+}
+label[for="diamonds"]{
+    background-image: url("https://www.uni-vt.bg/res/18767/%D1%81%D0%BD%D0%B8%D0%BC%D0%BA%D0%B0_%D1%81%D0%B5%D0%BC%D0%B8%D0%BD%D0%B0%D1%80.jpg");
+    background-size: cover;
 }
 
 label:before,
