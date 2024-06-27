@@ -53,7 +53,7 @@ function Carousel() {
     };
 
     return (
-        <Box sx={{ maxWidth: 400, flexGrow: 1 }}>
+        <Box sx={{ maxWidth: '100%', flexGrow: 1 }}>
             <Paper
                 square
                 elevation={0}
@@ -62,7 +62,7 @@ function Carousel() {
                     alignItems: 'center',
                     height: 50,
                     pl: 2,
-                    bgcolor: 'background.default',
+                    bgcolor: 'purple',
                 }}
             >
                 <Typography>{images[activeStep].label}</Typography>
@@ -79,11 +79,13 @@ function Carousel() {
                             <Box
                                 component="img"
                                 sx={{
-                                    height: 255,
+                                    height: '40rem',
                                     display: 'block',
-                                    maxWidth: 400,
+                                    maxWidth: '100%',
                                     overflow: 'hidden',
                                     width: '100%',
+                                    objectFit: 'cover',
+
                                 }}
                                 src={step.imgPath}
                                 alt={step.label}
@@ -96,6 +98,7 @@ function Carousel() {
                 steps={maxSteps}
                 position="static"
                 activeStep={activeStep}
+                sx={{bgcolor: 'purple'}}
                 nextButton={
                     <Button
                         size="small"
