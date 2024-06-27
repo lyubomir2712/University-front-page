@@ -25,6 +25,7 @@ function DegreeCard() {
                 <img className={styles.cardImage} src={PhDhat} alt="degree picture"></img>
                 <hr/>
                 <h2 className={styles.cardTitle}>Докторски програми</h2>
+
                 <p className={styles.cardText}>3 години</p>
             </div>
 

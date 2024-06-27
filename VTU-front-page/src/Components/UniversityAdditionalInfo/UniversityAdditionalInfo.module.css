@@ -1,7 +1,9 @@
 .universityInfoContainer{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin-left: 6%;
+    margin-right: 10%;
 }
 
 .universityInfoList{

@@ -14,22 +14,22 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
     {
-        label: 'San Francisco – Oakland Bay Bridge, United States',
+        label: '',
         imgPath:
             'https://www.uni-vt.bg/res/14157/%D0%A1%D1%82%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8.jpg',
     },
     {
-        label: 'Bird',
+        label: '',
         imgPath:
             'https://www.uni-vt.bg/res/14245/IMG_E2357.jpg',
     },
     {
-        label: 'Bali, Indonesia',
+        label: '',
         imgPath:
             'https://www.uni-vt.bg/res/9017/DSC_4740.JPG',
     },
     {
-        label: 'Goč, Serbia',
+        label: '',
         imgPath:
             'https://boliarinews.bg/wp-content/uploads/2023/05/347251601_271969128546231_5193620626140022276_n.jpg',
     },
@@ -53,7 +53,7 @@ function Carousel() {
     };
 
     return (
-        <Box sx={{ maxWidth: '100%', flexGrow: 1 }}>
+        <Box sx={{ maxWidth: '100%', flexGrow: 1, }}>
             <Paper
                 square
                 elevation={0}
