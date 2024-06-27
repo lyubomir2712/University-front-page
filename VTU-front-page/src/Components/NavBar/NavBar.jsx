@@ -6,7 +6,7 @@ function NavBar(){
         <nav>
             <ul>
                 <li><a href={"#"}>
-                    <img className={styles.logo} src={Logo}/></a></li>
+                    <img className={styles.logo} alt="logo image" src={Logo}/></a></li>
 
                 <li><a href={"#"} className={styles.link}>ВТУ</a></li>
                 <li><a href={"#"} className={styles.link}>Центрове</a></li>

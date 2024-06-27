@@ -1,0 +1,12 @@
+.universityInfoContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.universityInfoList{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+

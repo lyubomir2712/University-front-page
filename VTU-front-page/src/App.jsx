@@ -1,6 +1,7 @@
 import NavBar from './Components/NavBar/NavBar.jsx'
 import DegreeCard from './Components/DegreeCard/DegreeCard.jsx'
-import Carousel from './Components/Carousel/Carousel.jsx'
+
+import UniversityAdditionalInfo from "./Components/UniversityAdditionalInfo/UniversityAdditionalInfo.jsx";
 function App() {
 
 
@@ -8,9 +9,10 @@ function App() {
       <>
           <NavBar/>
 
-          <Carousel/>
 
           <DegreeCard/>
+
+          <UniversityAdditionalInfo/>
       </>
   )
 }
