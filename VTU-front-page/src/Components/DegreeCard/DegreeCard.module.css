@@ -24,6 +24,12 @@
     height:5rem;
     width:auto;
     border-radius: 50%;
+    /*transition: transform 0.9s ease;*/
+}
+
+.cardImage:hover{
+    width:auto;
+    transform: scale(1.2);
 }
 
 .card .card-title{
