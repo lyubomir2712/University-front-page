@@ -3,15 +3,28 @@
 }
 
 .upperFooter{
-    height: 10vh;
+    height: 5vh;
     width: 100%;
-    background-color: #b29ad8
+    background-color: #b29ad8;
+    padding-top: 0.1rem;
+    padding-bottom: 0;
 }
 
 .lowerFooter{
-    height: 10rem;
+    height: 8rem;
     width: 100%;
     background-color: #f3df64;
+}
+
+.lowerFooter p{
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.Contacts{
+    padding-top: 1%;
+    font-size: 10px;
 }
 
 .upperFooterList{

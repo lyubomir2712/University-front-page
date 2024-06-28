@@ -25,15 +25,30 @@ function Footer() {
                     <li><img src={YoutubeLogo} alt={"Facebook logo"}></img> Youtube</li>
                 </ul>
             </div>
-            <div className={styles.lowerFooter}>
 
-                <ul className={styles.Contacts}>
-                    <li><img src={BankLogo} alt={"Bank logo"}/></li>
-                    <li><img src={TelephoneLogo} alt={"Telephone logo"}/></li>
-                    <li><img src={EmailLogo} alt={"Email logo"}/></li>
-                    <li><img src={MapLogo} alt={"Map logo"}/></li>
-                </ul>
+
+            <div className={styles.lowerFooter}>
+                <table className={styles.Contacts}>
+                    <tr>
+                        <td><img src={BankLogo} alt={"Bank logo"}/> Ул. „Теодосий Търновски“ №2, Велико Търново 5003
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src={TelephoneLogo} alt={"Telephone logo"}/> О62 / 618 206</td>
+                    </tr>
+                    <tr>
+                        <td><img src={EmailLogo} alt={"Email logo"}/> rector@live.uni-vt.bg</td>
+                    </tr>
+                    <tr>
+                        <td><img src={MapLogo} alt={"Map logo"}/> Карта</td>
+                    </tr>
+                </table>
+                <p>© 2024 Великотърновски университет &quot;Св. св. Кирил и Методий&quot; Всички права запазени Поверителност
+                    и &quot;Бисквитки&quot; Карта
+                    на
+                    сайта.</p>
             </div>
+
         </div>
     )
 }
