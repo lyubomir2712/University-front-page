@@ -43,7 +43,7 @@ li{
 .link::before {
     content: "";
     position: absolute;
-    width: 100%;
+    width: 93%;
     height: 2px;
     background: black;
     border-radius: 5px;

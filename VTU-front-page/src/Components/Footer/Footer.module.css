@@ -36,12 +36,41 @@
 }
 
 
-.upperFooterList li:hover{
-    color: #f3df64;
+/*.upperFooterList li:hover{*/
+/*    color: #f3df64;*/
+/*}*/
+
+/*.upperFooterList li img:hover{*/
+/*    background-color: #f3df64;*/
+/*}*/
+
+.upperFooterList li{
+    text-decoration: none;
+    color: black;
+    align-self: center;
+    font-weight: bold;
+    font-size:18px;
+    padding: 0.25rem;
+    position: relative;
+    /*position: relative;*/
+    display: inline-block;
 }
 
-.upperFooterList li img:hover{
-    background-color: #f3df64;
+
+.upperFooter li::before {
+    content: "";
+    position: absolute;
+    width: 93%;
+    height: 2px;
+    background: black;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: all 0.6s ease;
+    bottom: 0;
+}
+
+.upperFooterList li:hover::before {
+    transform: scaleX(1);
 }
 
 
