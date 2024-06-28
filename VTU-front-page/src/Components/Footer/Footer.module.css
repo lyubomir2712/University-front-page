@@ -36,4 +36,12 @@
 }
 
 
+.upperFooterList li:hover{
+    color: #f3df64;
+}
+
+.upperFooterList li img:hover{
+    background-color: #f3df64;
+}
+
 

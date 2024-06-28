@@ -28,7 +28,7 @@ const Event = styled('a')({
     textDecoration: 'none', // Remove underline from links
     color: 'inherit', // Inherit color from parent
     '&:hover': {
-        backgroundColor: '#f9f9f9',}
+        backgroundColor: '#f9f9f9',},
 });
 
 const EventDate = styled('div')({
