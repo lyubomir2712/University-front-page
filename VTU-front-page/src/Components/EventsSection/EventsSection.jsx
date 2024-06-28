@@ -17,7 +17,7 @@ const Heading = styled('h2')({
     marginBottom: '20px',
 });
 
-const Event = styled('div')({
+const Event = styled('a')({
     display: 'flex',
     marginBottom: '20px',
     padding: '20px',
@@ -25,6 +25,10 @@ const Event = styled('div')({
     '&:last-child': {
         borderBottom: 'none',
     },
+    textDecoration: 'none', // Remove underline from links
+    color: 'inherit', // Inherit color from parent
+    '&:hover': {
+        backgroundColor: '#f9f9f9',}
 });
 
 const EventDate = styled('div')({
@@ -82,7 +86,7 @@ function EventsSection() {
     return (
         <EventsSectionContainer>
             <Heading>Събития</Heading>
-            <Event>
+            <Event href = "#">
                 <EventDate>
                     <div>
                         <EventDateSpan>НАЧАЛО</EventDateSpan>
@@ -103,7 +107,7 @@ function EventsSection() {
                     <p>Първото издание ще се проведе от 25 до 28 юни 2024 година - град Велико Търново във Великотърноски университет - &quot; Св. св. Кирил и Методий &quot;</p>
                 </EventDetails>
             </Event>
-            <Event>
+            <Event href={"#"}>
                 <EventDate>
                     <div>
                         <EventDateSpanBold>02</EventDateSpanBold>
@@ -117,7 +121,7 @@ function EventsSection() {
                         - 15:00 | <img src={PinIcon} alt={"calendar icon"}/> ЗАЛА 320</p>
                 </EventDetails>
             </Event>
-            <Event>
+            <Event href={"#"}>
                 <EventDate>
                     <div>
                         <EventDateSpanBold>02</EventDateSpanBold>
@@ -131,7 +135,7 @@ function EventsSection() {
                         - 16:00 | <img src={PinIcon} alt={"pin icon"}/> ЗАЛА 205</p>
                 </EventDetails>
             </Event>
-            <Event>
+            <Event href={"#"}>
                 <EventDate>
                     <div>
                         <EventDateSpanBold>18</EventDateSpanBold>
