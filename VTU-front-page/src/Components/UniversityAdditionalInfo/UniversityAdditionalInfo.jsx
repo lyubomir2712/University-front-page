@@ -26,7 +26,7 @@ function UniversityAdditionalInfo() {
                     <a href={"#"}><li>Студетски стипендии</li></a>
                     <a href={"#"}><li>Студентски живот</li></a>
                     <a href={"#"}><li>Учебен отдел</li></a>
-                    <a href={"#"}><li>Съобщения</li></a>
+                    <a href={"#"}><li>Е-студент</li></a>
                 </ul>
                 <ul className={styles.universityInfoList}>
                     <h4>Преподаватели</h4>
@@ -34,7 +34,7 @@ function UniversityAdditionalInfo() {
                     <a href={"#"}><li>Проекти</li></a>
                     <a href={"#"}><li>Научна е-библиотека</li></a>
                     <a href={"#"}><li>Конкурси</li></a>
-                    <a href={"#"}><li>Съобщения</li></a>
+                    <a href={"#"}><li>Е-преподавател</li></a>
                 </ul>
             </div>
         </>
