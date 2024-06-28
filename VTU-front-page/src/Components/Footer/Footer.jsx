@@ -1,16 +1,16 @@
 import styles from './Footer.module.css'
-import FacebookLogo from './../../../public/FacebookLogo.svg'
-import InstagramLogo from './../../../public/InstagramLogo.svg'
-import XLogo from './../../../public/XLogo.svg'
-import YoutubeLogo from './../../../public/YoutubeLogo.svg'
-import LinkedIn from './../../../public/LinkedInLogo.svg'
+import FacebookLogo from '../../../public/FacebookIcon.svg'
+import InstagramLogo from '../../../public/InstagramIcon.svg'
+import XLogo from '../../../public/XIcon.svg'
+import YoutubeLogo from '../../../public/YoutubeIcon.svg'
+import LinkedIn from '../../../public/LinkedInIcon.svg'
 
 
 
-import BankLogo from './../../../public/BankLogo.svg'
-import TelephoneLogo from './../../../public/TelephoneLogo.svg'
-import EmailLogo from './../../../public/EmailLogo.svg'
-import MapLogo from './../../../public/MapLogo.svg'
+import BankLogo from '../../../public/BankIcon.svg'
+import TelephoneLogo from '../../../public/TelephoneIcon.svg'
+import EmailLogo from '../../../public/EmailIcon.svg'
+import MapLogo from '../../../public/MapIcon.svg'
 
 
 function Footer() {

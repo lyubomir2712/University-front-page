@@ -1,5 +1,8 @@
 import React from 'react';
 import { styled } from '@mui/system';
+import CalendarIcon from './../../../public/CalendarIcon.svg'
+import ClockIcon from './../../../public/ClockIcon.svg'
+import PinIcon from './../../../public/PinIcon.svg'
 
 const EventsSectionContainer = styled('div')({
     backgroundColor: 'white',
