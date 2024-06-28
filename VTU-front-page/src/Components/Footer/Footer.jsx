@@ -11,6 +11,8 @@ import BankLogo from '../../../public/BankIcon.svg'
 import TelephoneLogo from '../../../public/TelephoneIcon.svg'
 import EmailLogo from '../../../public/EmailIcon.svg'
 import MapLogo from '../../../public/MapIcon.svg'
+import LanguageIcon from "../../../public/LanguageIcon.svg";
+import SearchIcon from "../../../public/SearchIcon.svg";
 
 
 function Footer() {
@@ -28,24 +30,38 @@ function Footer() {
 
 
             <div className={styles.lowerFooter}>
-                <table className={styles.Contacts}>
-                    <tr>
-                        <td><img src={BankLogo} alt={"Bank logo"}/> Ул. „Теодосий Търновски“ №2, Велико Търново 5003
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img src={TelephoneLogo} alt={"Telephone logo"}/> О62 / 618 206</td>
-                    </tr>
-                    <tr>
-                        <td><img src={EmailLogo} alt={"Email logo"}/> rector@live.uni-vt.bg</td>
-                    </tr>
-                    <tr>
-                        <td><img src={MapLogo} alt={"Map logo"}/> Карта</td>
-                    </tr>
-                </table>
-                <p className={styles.AdditionsText}>© 2024 Великотърновски университет &quot;Св. св. Кирил и Методий&quot; | &nbsp; <a href={"#"}> Всички права запазени Поверителност
-                    и &quot;Бисквитки&quot;</a> &nbsp; | &nbsp; <a href={"#"}> Карта на
-                    сайта.</a></p>
+                <div className={styles.Container}>
+                    <table className={styles.Contacts}>
+                        <tr>
+                            <td><img src={BankLogo} alt={"Bank logo"}/> Ул. „Теодосий Търновски“ №2, Велико Търново 5003
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src={TelephoneLogo} alt={"Telephone logo"}/> О62 / 618 206</td>
+                        </tr>
+                        <tr>
+                            <td><img src={EmailLogo} alt={"Email logo"}/> rector@live.uni-vt.bg</td>
+                        </tr>
+                        <tr>
+                            <td><img src={MapLogo} alt={"Map logo"}/> Карта</td>
+                        </tr>
+                    </table>
+
+                    <ul>
+                        <li><a href={"#"} className={styles.link}>ВТУ</a></li>
+                        <li><a href={"#"} className={styles.link}>Центрове</a></li>
+                        <li><a href={"#"} className={styles.link}>Прием</a></li>
+                        <li><a href={"#"} className={styles.link}>Студенти</a></li>
+                        <li><a href={"#"} className={styles.link}>Научна дейност</a></li>
+                        <li><a href={"#"} className={styles.link}>Международна дейност</a></li>
+                        <li><a href={"#"} className={styles.link}>Кариери и завършили</a></li>
+                        <li><a href={"#"} className={styles.link}>Контакти</a></li>
+                    </ul>
+                </div>
+                <p className={styles.AdditionsText}>© 2024 Великотърновски университет &quot;Св. св. Кирил и
+                    Методий&quot; | &nbsp; <a href={"#"}> Всички права запазени Поверителност
+                        и &quot;Бисквитки&quot;</a> &nbsp; | &nbsp; <a href={"#"}> Карта на
+                        сайта.</a></p>
             </div>
 
         </div>

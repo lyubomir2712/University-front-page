@@ -25,6 +25,7 @@
 .Contacts{
     padding-top: 1%;
     font-size: 10px;
+    padding-left: 2rem;
 }
 
 .upperFooterList{
@@ -78,6 +79,13 @@
 
 .AdditionsText a:hover{
     color: gray;
+}
+
+
+.Container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 

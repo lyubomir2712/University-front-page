@@ -4,6 +4,7 @@ ul{
     align-items: center;
     gap:1.2rem;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 li{
