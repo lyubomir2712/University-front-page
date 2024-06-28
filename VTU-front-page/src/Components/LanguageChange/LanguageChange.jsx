@@ -1,25 +1,44 @@
+// src/i18n.js
 import i18n from 'i18next';
-import {initReactI18next} from 'react-i18next'
+import { initReactI18next } from 'react-i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
 
-import bg from './Languages/bg.js'
-import en from './Languages/en.js'
-
-const resourses ={
+const resources = {
     en: {
-        translation: en,
+        translation: {
+            "ВТУ": "VTU",
+            "Центрове": "Centers",
+            "Прием": "Admission",
+            "Студенти": "Students",
+            "Научна дейност": "Research",
+            "Международна дейност": "International Activities",
+            "Кариери и завършили": "Careers and Alumni",
+            "Контакти": "Contacts",
+        }
     },
     bg: {
-        translation: bg
-    },
+        translation: {
+            "ВТУ": "ВТУ",
+            "Центрове": "Центрове",
+            "Прием": "Прием",
+            "Студенти": "Студенти",
+            "Научна дейност": "Научна дейност",
+            "Международна дейност": "Международна дейност",
+            "Кариери и завършили": "Кариери и завършили",
+            "Контакти": "Контакти",
+        }
+    }
 };
 
-i18n.use(initReactI18next).init({
-    resourses,
-    lng: 'bg',
-    interpolation: {
-        escapeValue: false,
-    },
-});
-
+i18n
+    .use(LanguageDetector) // detects the user language
+    .use(initReactI18next) // passes i18n down to react-i18next
+    .init({
+        resources,
+        fallbackLng: 'en',
+        interpolation: {
+            escapeValue: false // react already safes from xss
+        }
+    });
 
 export default i18n;
