@@ -97,7 +97,9 @@ function EventsSection() {
                 </EventDate>
                 <EventDetails>
                     <h3>Академия по предприемачество в земеделието</h3>
-                    <p>25 ЮНИ 2024 - 28 ЮНИ 2024 | ВЕЛИКОТЪРНОВСКИ УНИВЕРСИТЕТ - &quot; СВ. СВ. КИРИЛ И МЕТОДИЙ &quot;</p>
+                    <p><img src={CalendarIcon} alt={"calendar icon"}/> 25 ЮНИ 2024 - 28 ЮНИ 2024 | <img
+                        src={PinIcon} alt={"pin icon"}/> ВЕЛИКОТЪРНОВСКИ
+                        УНИВЕРСИТЕТ - &quot; СВ. СВ. КИРИЛ И МЕТОДИЙ &quot;</p>
                     <p>Първото издание ще се проведе от 25 до 28 юни 2024 година - град Велико Търново във Великотърноски университет - &quot; Св. св. Кирил и Методий &quot;</p>
                 </EventDetails>
             </Event>
@@ -110,7 +112,9 @@ function EventsSection() {
                 </EventDate>
                 <EventDetails>
                     <h3>Публична защита на дисертационен труд</h3>
-                    <p>02 ЮЛИ 2024 | 13:00 - 15:00 | ЗАЛА 320</p>
+                    <p><img src={CalendarIcon} alt={"calendar icon"}/> 02 ЮЛИ 2024 | <img src={ClockIcon}
+                                                                                          alt={"clock icon"}/> 13:00
+                        - 15:00 | <img src={PinIcon} alt={"calendar icon"}/> ЗАЛА 320</p>
                 </EventDetails>
             </Event>
             <Event>
@@ -122,7 +126,9 @@ function EventsSection() {
                 </EventDate>
                 <EventDetails>
                     <h3>Публична защита на дисертационен труд</h3>
-                    <p>02 ЮЛИ 2024 | 14:00 - 16:00 | ЗАЛА 205</p>
+                    <p><img src={CalendarIcon} alt={"calendar icon"}/> 02 ЮЛИ 2024 | <img src={ClockIcon}
+                                                                                          alt={"clock icon"}/> 14:00
+                        - 16:00 | <img src={PinIcon} alt={"pin icon"}/> ЗАЛА 205</p>
                 </EventDetails>
             </Event>
             <Event>
@@ -134,7 +140,9 @@ function EventsSection() {
                 </EventDate>
                 <EventDetails>
                     <h3>Конференция на тема Правото и бизнесът в съвременното общество</h3>
-                    <p>18 ОКТ 2024 | 09:30 - 13:00 | ЗАЛА 1</p>
+                    <p><img src={CalendarIcon} alt={"calendar icon"}/> 18 ОКТ 2024 | <img src={CalendarIcon}
+                                                                                          alt={"clock icon"}/> 09:30
+                        - 13:00 | <img src={PinIcon} alt={"pin icon"}/> ЗАЛА 1</p>
                 </EventDetails>
             </Event>
             <ViewAllBtn>Виж всички</ViewAllBtn>
