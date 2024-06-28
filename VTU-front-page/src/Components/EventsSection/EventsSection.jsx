@@ -70,7 +70,8 @@ const ViewAllBtn = styled('button')({
     cursor: 'pointer',
     fontSize: '16px',
     '&:hover': {
-        backgroundColor: '#a282d5',
+        backgroundColor: 'purple',
+        filter: "brightness(0.8)",
     },
 });
 
