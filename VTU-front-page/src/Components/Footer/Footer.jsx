@@ -18,11 +18,11 @@ function Footer() {
         <div className={styles.footer}>
             <div className={styles.upperFooter}>
                 <ul className={styles.upperFooterList}>
-                    <li><img src={FacebookLogo} alt={"Facebook logo"}></img> Facebook</li>
-                    <li><img src={XLogo} alt={"X logo"}></img> X</li>
-                    <li><img src={InstagramLogo} alt={"Facebook logo"}></img> Instagram</li>
-                    <li><img src={LinkedIn} alt={"Facebook logo"}></img> LinkedIn</li>
-                    <li><img src={YoutubeLogo} alt={"Facebook logo"}></img> Youtube</li>
+                    <li><a href={"#"}><img src={FacebookLogo} alt={"Facebook logo"}></img> Facebook</a></li>
+                    <li><a href={"#"}><img src={XLogo} alt={"X logo"}></img> X</a></li>
+                    <li><a href={"#"}><img src={InstagramLogo} alt={"Facebook logo"}></img> Instagram</a></li>
+                    <li><a href={"#"}><img src={LinkedIn} alt={"Facebook logo"}></img> LinkedIn</a></li>
+                    <li><a href={"#"}><img src={YoutubeLogo} alt={"Facebook logo"}></img> Youtube</a></li>
                 </ul>
             </div>
 
@@ -43,10 +43,9 @@ function Footer() {
                         <td><img src={MapLogo} alt={"Map logo"}/> Карта</td>
                     </tr>
                 </table>
-                <p>© 2024 Великотърновски университет &quot;Св. св. Кирил и Методий&quot; Всички права запазени Поверителност
-                    и &quot;Бисквитки&quot; Карта
-                    на
-                    сайта.</p>
+                <p className={styles.AdditionsText}>© 2024 Великотърновски университет &quot;Св. св. Кирил и Методий&quot; | &nbsp; <a href={"#"}> Всички права запазени Поверителност
+                    и &quot;Бисквитки&quot;</a> &nbsp; | &nbsp; <a href={"#"}> Карта на
+                    сайта.</a></p>
             </div>
 
         </div>
