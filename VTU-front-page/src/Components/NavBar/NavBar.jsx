@@ -2,16 +2,11 @@
 import Logo from './../../assets/LogoEdited.png'
 import styles from './NavBar.module.css'
 import LanguageIcon from './../../../public/LanguageIcon.svg'
-import SearchIcon from './../../../public/SearchIcon.svg'
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
-
-import {Modal} from "@mui/material";
-import Button from "@mui/material/Button";
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 import SearchModal from "../SearchModal/SearchModal.jsx";
 import AuthenticationModal from "../AuthenticationModal/AuthenticationModal.jsx";
+import i18n from '../LanguageChange/LanguageChange.js';
 
 function NavBar() {
     const { t, i18n } = useTranslation();
@@ -25,7 +20,7 @@ function NavBar() {
 
     return (
         <>
-            <h1 className={styles.heading}>Великотърновски университет &quot;Св. св. Кирил и Методий&quot;</h1>
+            <h1 className={styles.heading}>{t('Великотърновски университет "Св. св. Кирил и Методий"')}</h1>
         <nav>
             <ul>
                 <li><a href={"#"}>
