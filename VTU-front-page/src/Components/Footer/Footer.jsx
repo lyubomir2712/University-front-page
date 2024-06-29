@@ -11,8 +11,7 @@ import BankLogo from '../../../public/BankIcon.svg'
 import TelephoneLogo from '../../../public/TelephoneIcon.svg'
 import EmailLogo from '../../../public/EmailIcon.svg'
 import MapLogo from '../../../public/MapIcon.svg'
-import LanguageIcon from "../../../public/LanguageIcon.svg";
-import SearchIcon from "../../../public/SearchIcon.svg";
+
 
 
 function Footer() {

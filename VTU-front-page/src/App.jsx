@@ -15,7 +15,11 @@ function App() {
       <>
           <NavBar/>
 
+          <br/><br/>
+
           <Carousel/>
+
+          <br/><br/><br/>
 
           <DegreeCard/>
 
@@ -23,7 +27,7 @@ function App() {
 
           <UniversityAdditionalInfo/>
 
-          <br/><br/><br/>
+          <br/><br/><br/><br/>
 
           <News/>
           <br/><br/><br/>

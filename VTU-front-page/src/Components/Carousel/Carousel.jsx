@@ -14,22 +14,22 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
     {
-        label: '',
+        label: 'Запиши се във Великотърновския университет !',
         imgPath:
             'https://www.uni-vt.bg/res/14157/%D0%A1%D1%82%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8.jpg',
     },
     {
-        label: '',
+        label: 'Откривай знанието, преобразявай бъдещето !',
         imgPath:
             'https://www.uni-vt.bg/res/14245/IMG_E2357.jpg',
     },
     {
-        label: '',
+        label: 'Ние успяваме заедно!',
         imgPath:
             'https://www.uni-vt.bg/res/9017/DSC_4740.JPG',
     },
     {
-        label: '',
+        label: 'Възможност и мъдрост за всяко бъдеще !',
         imgPath:
             'https://boliarinews.bg/wp-content/uploads/2023/05/347251601_271969128546231_5193620626140022276_n.jpg',
     },
@@ -60,9 +60,12 @@ function Carousel() {
                 sx={{
                     display: 'flex',
                     alignItems: 'center',
+                    justifyContent: 'center',
                     height: 50,
                     pl: 2,
                     bgcolor: '#b29ad8',
+                    color: 'white',
+                    fontStyle: 'italic',
                 }}
             >
                 <Typography>{images[activeStep].label}</Typography>

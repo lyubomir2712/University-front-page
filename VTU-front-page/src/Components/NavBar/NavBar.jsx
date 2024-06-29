@@ -17,6 +17,8 @@ function NavBar() {
     }
 
     return (
+        <>
+            <h1 className={styles.heading}>Великотърновски университет &quot;Св. св. Кирил и Методий&quot;</h1>
         <nav>
             <ul>
                 <li><a href={"#"}>
@@ -34,6 +36,7 @@ function NavBar() {
                 <li><a href={"#"} ><img src={SearchIcon} alt={"Search icon"} /></a></li>
             </ul>
         </nav>
+        </>
     )
 }
 
