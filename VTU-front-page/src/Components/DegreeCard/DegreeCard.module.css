@@ -11,12 +11,13 @@
 .card{
     border: 1px solid rgb(200, 198, 198);
     border-radius: 10px;
-    box-shadow:5px 5px 5px rgba(11, 11, 10, 0.1);
+    /*box-shadow:5px 5px 5px rgba(11, 11, 10, 0.1);*/
     padding: 30px;
     margin: 10px;
     text-align:center;
     max-width: 250px;
     display:inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -24,7 +25,8 @@
     height:5rem;
     width:auto;
     border-radius: 50%;
-    /*transition: transform 0.9s ease;*/
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .cardImage:hover{
@@ -42,7 +44,4 @@
 .cardTitle:hover{
     color: purple;
 }
-/*.card .card-text{*/
-/*    font-family: Arial, sans-serif;*/
-/*    !*color: hsl(0%, 0%, 30%)*!*/
-/*}*/
+

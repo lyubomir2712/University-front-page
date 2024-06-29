@@ -10,45 +10,46 @@ function News() {
 
         <div className={styles.newsSection}>
             <h2>Новини</h2>
-        <div className={styles.newsContainer}>
-            <a href={"#"}>
-                <div className={styles.new}>
-                    <img src={NewsImage1} alt="degree picture"></img>
-                    <hr/>
-                    <br/>
-                    <p className={styles.cardTitle}>Китайска делегация посети Великотърновския
-                        университет</p>
+            <div className={styles.newsContainer}>
+                <a href={"#"}>
+                    <div className={styles.new}>
+                        <img src={NewsImage1} alt="degree picture"></img>
+                        <hr/>
+                        <p className={styles.cardTitle}>Китайска делегация посети Великотърновския
+                            университет</p>
 
-                </div>
-            </a>
-
-            <a href={"#"}>
-                <div className={styles.new}>
-                    <img src={NewsImage2} alt="degree picture"></img>
-                    <hr/>
-                    <br/>
-                    <p className={styles.cardTitle}>Международен летен семинар по български език и
-                        култура</p>
-
-                </div>
+                    </div>
                 </a>
 
-                <div className={styles.new}>
-                <a href={"#"}><img src={NewsImage3} alt="degree picture"></img></a>
-                <hr/>
-                <br/>
-                <a href={"#"}><p className={styles.cardTitle}>ПРИЕМ МАГИСТЪР 2024 г.</p></a>
+                <a href={"#"}>
+                    <div className={styles.new}>
+                        <img src={NewsImage2} alt="degree picture"></img>
+                        <hr/>
+                        <p className={styles.cardTitle}>Международен летен семинар по български език и
+                            култура</p>
 
+                    </div>
+                </a>
+
+                <a href={"#"}>
+                    <div className={styles.new}>
+                        <img src={NewsImage3} alt="degree picture"></img>
+                        <hr/>
+                        <p className={styles.cardTitle}>ПРИЕМ МАГИСТЪР 2024 г.</p>
+
+                    </div>
+                </a>
+
+                <a href={"#"}>
+                    <div className={styles.new}>
+                        <img src={NewsImage4} alt="degree picture"></img>
+                        <hr/>
+                        <p className={styles.cardTitle}>Придобиване на ПКС във Великотърновския
+                            университет</p>
+
+                    </div>
+                </a>
             </div>
-
-            <div className={styles.new}>
-                <a href={"#"}><img src={NewsImage4} alt="degree picture"></img></a>
-                <hr/>
-                <br/>
-                <a href={"#"}><p className={styles.cardTitle}>Придобиване на ПКС във Великотърновския университет</p></a>
-
-            </div>
-        </div>
         </div>
     )
 }

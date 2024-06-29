@@ -15,6 +15,7 @@ const EventsSectionContainer = styled('div')({
 const Heading = styled('h2')({
     fontSize: '24px',
     marginBottom: '20px',
+    // paddingLeft: '20px',
 });
 
 const Event = styled('a')({
@@ -25,10 +26,11 @@ const Event = styled('a')({
     '&:last-child': {
         borderBottom: 'none',
     },
-    textDecoration: 'none', // Remove underline from links
-    color: 'inherit', // Inherit color from parent
+    textDecoration: 'none',
+    color: 'inherit',
     '&:hover': {
         backgroundColor: '#f9f9f9',},
+
 });
 
 const EventDate = styled('div')({
