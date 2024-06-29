@@ -5,8 +5,8 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import SearchIcon from "../../../public/SearchIcon.svg";
 
-import SearchIconIcon from "../../../public/SearchIcon.svg";
-import styles from './SearchModal.module.css'
+import AuthenticaitonIcon from "../../../public/AuthenticationIcon.svg";
+import styles from './AuthenticationModal.module.css'
 
 
 
@@ -25,19 +25,19 @@ const style = {
 
 const modal = {
     display: 'flex',
-    flexDirection: 'row',
+    flexDirection: 'column',
     alignItems: 'center',
 }
 
 
-export default function SearchModal() {
+export default function AuthenticationModal() {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
 
     return (
         <div>
-            <img src={SearchIcon} alt={"Search icon"} onClick={handleOpen} />
+            <img src={AuthenticaitonIcon} alt={"Search icon"} onClick={handleOpen} />
             {/*<Button onClick={handleOpen}>Open modal</Button>*/}
             <Modal
                 open={open}
@@ -47,17 +47,19 @@ export default function SearchModal() {
             >
                 <Box sx={style}>
                     <Typography id="modal-modal-title" variant="h6" component="h2">
-                        Търсене
+                        Вход
+                        <hr/>
                     </Typography>
                     <Typography style={modal} id="modal-modal-description" sx={{mt: 2}}>
-                        <input className={styles.modalInput} type={"text"}/>
-                        <select className={styles.modalDropdown}>
-                            <option>Всички</option>
-                            <option>Новини и събития</option>
-                            <option>Преподаватели и служители</option>
-                            <option>Страници</option>
-                        </select>
-                        <button className={styles.modalButton}><img src={SearchIcon} alt={"search icon"}/></button>
+                        <button className={styles.modalButton}>
+                            Е-студент
+                        </button>
+                        {/*<button className={styles.modalButton}>*/}
+                        {/*    Е-кандидат студент*/}
+                        {/*</button>*/}
+                        <button className={styles.modalButton}>
+                            E-преподавател
+                        </button>
                     </Typography>
                 </Box>
             </Modal>

@@ -11,6 +11,7 @@ import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import SearchModal from "../SearchModal/SearchModal.jsx";
+import AuthenticationModal from "../AuthenticationModal/AuthenticationModal.jsx";
 
 function NavBar() {
     const { t, i18n } = useTranslation();
@@ -39,6 +40,7 @@ function NavBar() {
                 <li><a href={"#"} className={styles.link}>{t('Кариери и завършили')}</a></li>
                 <li><a href={"#"} className={styles.link}>{t('Контакти')}</a></li>
                 <li onClick={toggleLanguage}><img src={LanguageIcon} alt={"Language icon"} /></li>
+                <li><AuthenticationModal/></li>
                 <li><SearchModal/></li>
             </ul>
         </nav>
