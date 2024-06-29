@@ -6,6 +6,12 @@ import SearchIcon from './../../../public/SearchIcon.svg'
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 
+import {Modal} from "@mui/material";
+import Button from "@mui/material/Button";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import SearchModal from "../SearchModal/SearchModal.jsx";
+
 function NavBar() {
     const { t, i18n } = useTranslation();
     const [isEnglish, setIsEnglish] = useState(true);
@@ -33,7 +39,7 @@ function NavBar() {
                 <li><a href={"#"} className={styles.link}>{t('Кариери и завършили')}</a></li>
                 <li><a href={"#"} className={styles.link}>{t('Контакти')}</a></li>
                 <li onClick={toggleLanguage}><img src={LanguageIcon} alt={"Language icon"} /></li>
-                <li><a href={"#"} ><img src={SearchIcon} alt={"Search icon"} /></a></li>
+                <li><SearchModal/></li>
             </ul>
         </nav>
         </>

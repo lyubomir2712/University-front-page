@@ -1,0 +1,20 @@
+.modalButton{
+    background-color: #f3df64;
+    width: 2.5rem;
+    height: 1.9rem;
+    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.modalInput{
+
+    height: 1.5rem;
+    width: 17rem;
+}
+
+
+.modalDropdown{
+    height: 1.9rem;
+    width: 5rem;
+
+}
