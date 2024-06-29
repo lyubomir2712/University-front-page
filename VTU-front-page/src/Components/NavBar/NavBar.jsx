@@ -39,9 +39,9 @@ function NavBar() {
                 <li><a href={"#"} className={styles.link}>{t('Международна дейност')}</a></li>
                 <li><a href={"#"} className={styles.link}>{t('Кариери и завършили')}</a></li>
                 <li><a href={"#"} className={styles.link}>{t('Контакти')}</a></li>
-                <li onClick={toggleLanguage}><img src={LanguageIcon} alt={"Language icon"} /></li>
-                <li><AuthenticationModal/></li>
-                <li><SearchModal/></li>
+                <li className={styles.link}  onClick={toggleLanguage}><img src={LanguageIcon} alt={"Language icon"} /></li>
+                <li className={styles.link}> <AuthenticationModal/></li>
+                <li className={styles.link}> <SearchModal/></li>
             </ul>
         </nav>
         </>

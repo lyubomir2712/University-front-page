@@ -5,3 +5,7 @@
     border-radius: 0.4rem;
     height: 3rem;
 }
+
+.modalButton:hover{
+    filter: brightness(0.8);
+}
