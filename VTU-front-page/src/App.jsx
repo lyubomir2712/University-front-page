@@ -5,6 +5,9 @@ import EventsSection from "./Components/EventsSection/EventsSection.jsx"
 import Carousel from "./Components/Carousel/Carousel.jsx";
 import Footer from "./Components/Footer/Footer.jsx"
 
+import News from "./Components/News/News.jsx"
+
+
 function App() {
 
 
@@ -13,9 +16,16 @@ function App() {
           <NavBar/>
 
           <Carousel/>
+
           <DegreeCard/>
+
           <br/><br/><br/>
+
           <UniversityAdditionalInfo/>
+
+          <br/><br/><br/>
+
+          <News/>
           <br/><br/><br/>
 
           <EventsSection/>

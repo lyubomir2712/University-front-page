@@ -1,0 +1,40 @@
+.newsContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.newsSection{
+    background-color: white;
+    border-radius: 0.5rem;
+    margin-left: 1.3rem;
+    margin-right: 1.3rem;
+    padding-top: 0.8rem;
+}
+.newsSection h2{
+    padding-left: 1rem;
+}
+
+.new img{
+    width: 28rem;
+    height: auto;
+    display: block;
+    position: relative;
+    border-radius: 0.5rem;
+    border: 1px solid lightgray;
+}
+
+.new:hover{
+    filter: brightness(0.8);
+    color: purple;
+}
+
+
+
+
+
+
+
+
+
