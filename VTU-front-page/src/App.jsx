@@ -14,8 +14,9 @@ function App() {
 
           <Carousel/>
           <DegreeCard/>
-
+          <br/><br/><br/>
           <UniversityAdditionalInfo/>
+          <br/><br/><br/>
 
           <EventsSection/>
           <Footer/>

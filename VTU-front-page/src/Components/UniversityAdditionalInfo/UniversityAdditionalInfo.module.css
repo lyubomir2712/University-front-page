@@ -12,3 +12,32 @@
     flex-wrap: wrap;
 }
 
+
+
+.universityInfoContainer table td, .universityInfoContainer table th{
+    width: 20%;
+    height: auto;
+    margin-right: 2rem;
+    border: 1px solid rgb(200, 198, 198);
+    align-items: center;
+}
+
+.universityInfoContainer table{
+    width: 100%;
+}
+
+.universityInfoContainer table td a{
+    font-weight: bold;
+}
+
+.universityInfoContainer table td a:hover{
+    color: purple;
+
+}
+
+
+
+.universityInfoContainer ul{
+    list-style-type: square;
+}
+
