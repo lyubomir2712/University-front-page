@@ -15,42 +15,34 @@ import i18n from '../LanguageChange/LanguageChange.js';
 
 
 
-const toggleLanguage = () => {
-    const newLanguage = isEnglish ? "bg" : "en";
-    i18n.changeLanguage(newLanguage);
-    setIsEnglish(!isEnglish);
-}
-
 
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
     {
-        label: 'Запиши се във Великотърновския университет !',
+        label: '',
         imgPath:
             ('https://www.uni-vt.bg/res/14157/%D0%A1%D1%82%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8.jpg'),
     },
     {
-        label: 'Откривай знанието, преобразявай бъдещето !',
+        label: '',
         imgPath:
             'https://www.uni-vt.bg/res/14245/IMG_E2357.jpg',
     },
     {
-        label: 'Ние успяваме заедно!',
+        label: '',
         imgPath:
             'https://www.uni-vt.bg/res/9017/DSC_4740.JPG',
     },
     {
-        label: 'Възможност и мъдрост за всяко бъдеще !',
+        label: '',
         imgPath:
             'https://boliarinews.bg/wp-content/uploads/2023/05/347251601_271969128546231_5193620626140022276_n.jpg',
     },
 ];
 
 function Carousel() {
-
-
 
     const { t, i18n } = useTranslation();
     const [isEnglish, setIsEnglish] = useState(true);
@@ -60,6 +52,22 @@ function Carousel() {
         i18n.changeLanguage(newLanguage);
         setIsEnglish(!isEnglish);
     }
+
+    for(let i = 0; i<images.length; i++){
+        if(i == 0){
+            images[i].label = t('Запиши се във Великотърновския университет !');
+        }
+        else if(i == 1){
+            images[i].label = t('Откривай знанието, преобразявай бъдещето !');
+        }
+        else if(i == 2){
+            images[i].label = t('Ние успяваме заедно!');
+        }
+        else if(i == 3){
+            images[i].label = t('Възможност и мъдрост за всяко бъдеще !');
+        }
+    }
+
 
 
     const theme = useTheme();
