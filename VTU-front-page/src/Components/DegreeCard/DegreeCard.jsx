@@ -3,9 +3,22 @@ import PhDhat from "../../assets/PhD-yellow-hat.png"
 import MastersHat from './../../assets/Masters-purple-hat.png'
 import BachelorHat from './../../assets/Bachelor-hat-blue.png'
 import Laptop from "../../assets/Laptop-logo.png"
-
+import i18n from '../LanguageChange/LanguageChange.js';
+import {useTranslation} from "react-i18next";
+import {useState} from "react";
 
 function DegreeCard() {
+
+    const { t, i18n } = useTranslation();
+    const [isEnglish, setIsEnglish] = useState(true);
+
+    const toggleLanguage = () => {
+        const newLanguage = isEnglish ? "bg" : "en";
+        i18n.changeLanguage(newLanguage);
+        setIsEnglish(!isEnglish);
+    }
+
+
     return (<div className={styles.cardContainer}>
             <div className={styles.card}>
                 <a href={"#"}><img className={styles.cardImage} src={BachelorHat} alt="degree picture"></img></a>

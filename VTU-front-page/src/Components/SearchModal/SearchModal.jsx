@@ -7,7 +7,9 @@ import SearchIcon from "../../../public/SearchIcon.svg";
 
 import SearchIconIcon from "../../../public/SearchIcon.svg";
 import styles from './SearchModal.module.css'
-
+import {useTranslation} from "react-i18next";
+import {useState} from "react";
+import i18n from '../LanguageChange/LanguageChange.js';
 
 
 const style = {
@@ -31,6 +33,19 @@ const modal = {
 
 
 export default function SearchModal() {
+
+    const { t, i18n } = useTranslation();
+    const [isEnglish, setIsEnglish] = useState(true);
+
+    const toggleLanguage = () => {
+        const newLanguage = isEnglish ? "bg" : "en";
+        i18n.changeLanguage(newLanguage);
+        setIsEnglish(!isEnglish);
+    }
+
+
+
+
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -47,15 +62,15 @@ export default function SearchModal() {
             >
                 <Box sx={style}>
                     <Typography id="modal-modal-title" variant="h6" component="h2">
-                        Търсене
+                        {t("Търсене")}
                     </Typography>
                     <Typography style={modal} id="modal-modal-description" sx={{mt: 2}}>
                         <input className={styles.modalInput} type={"text"}/>
                         <select className={styles.modalDropdown}>
-                            <option>Всички</option>
-                            <option>Новини и събития</option>
-                            <option>Преподаватели и служители</option>
-                            <option>Страници</option>
+                            <option>{t("Всички")}</option>
+                            <option>{t("Новини и събития")} </option>
+                            <option>{t("Преподаватели и служители")}</option>
+                            <option>{t("Страници")}</option>
                         </select>
                         <button className={styles.modalButton}><img src={SearchIcon} alt={"search icon"}/></button>
                     </Typography>
