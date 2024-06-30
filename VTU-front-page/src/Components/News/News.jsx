@@ -4,8 +4,23 @@ import NewsImage1 from './../../assets/NewsImage1.jpeg'
 import NewsImage2 from './../../assets/NewsImage2.jpeg'
 import NewsImage3 from './../../assets/NewsImage3.jpeg'
 import NewsImage4 from './../../assets/NewsImage4.png'
+import {useTranslation} from "react-i18next";
+import {useState} from "react";
+import i18n from '../LanguageChange/LanguageChange.js';
 
 function News() {
+
+    const { t, i18n } = useTranslation();
+    const [isEnglish, setIsEnglish] = useState(true);
+
+    const toggleLanguage = () => {
+        const newLanguage = isEnglish ? "bg" : "en";
+        i18n.changeLanguage(newLanguage);
+        setIsEnglish(!isEnglish);
+    }
+
+
+
     return (
 
         <div className={styles.newsSection}>

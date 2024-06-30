@@ -1,6 +1,20 @@
 import styles from './UniversityAdditionalInfo.module.css';
+import i18n from '../LanguageChange/LanguageChange.js';
+import {useTranslation} from "react-i18next";
+import {useState} from "react";
 
 function UniversityAdditionalInfo() {
+
+    const { t, i18n } = useTranslation();
+    const [isEnglish, setIsEnglish] = useState(true);
+
+    const toggleLanguage = () => {
+        const newLanguage = isEnglish ? "bg" : "en";
+        i18n.changeLanguage(newLanguage);
+        setIsEnglish(!isEnglish);
+    }
+
+
     return (
         <>
             <div className={styles.universityInfoContainer}>
@@ -8,123 +22,52 @@ function UniversityAdditionalInfo() {
                 <table>
                     <thead>
                     <tr>
-                        <th>За Университета</th>
-                        <th>Информационни Ресурси</th>
-                        <th>Студенти</th>
-                        <th>Преподаватели</th>
+                        <th>{t("За Университета")}</th>
+                        <th>{t("Информационни Ресурси")}</th>
+                        <th>{t("Студенти")}</th>
+                        <th>{t("Преподаватели")}</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
                         <td>
                             <ul className={styles.universityInfoList}>
-                                <li><a href="#">Ръководство</a></li>
-                                <li><a href="#">Акредитации и сертификати</a></li>
-                                <li><a href="#">Програма Еразъм+</a></li>
-                                <li><a href="#">Политики и декларации</a></li>
+                                <li><a href="#">{t("Ръководство")}</a></li>
+                                <li><a href="#">{t("Акредитации и сертификати")}</a></li>
+                                <li><a href="#">{t("Програма Еразъм+")}</a></li>
+                                <li><a href="#">{t("Политики и декларации")}</a></li>
                             </ul>
                         </td>
                         <td>
                             <ul className={styles.universityInfoList}>
-                                <li><a href="#">Електронни услуги</a></li>
-                                <li><a href="#">Електронно обучение</a></li>
-                                <li><a href="#">Университетска библиотека</a></li>
-                                <li><a href="#">Кариерен център</a></li>
-                                <li><a href="#">Инструкция за достъп</a></li>
+                                <li><a href="#">{t("Електронни услуги")}</a></li>
+                                <li><a href="#">{t("Електронно обучение")}</a></li>
+                                <li><a href="#">{t("Университетска библиотека")}</a></li>
+                                <li><a href="#">{t("Кариерен център")}</a></li>
+                                <li><a href="#">{t("Инструкция за достъп")}</a></li>
                             </ul>
                         </td>
                         <td>
                             <ul className={styles.universityInfoList}>
-                                <li><a href="#">Студентско кредитиране</a></li>
-                                <li><a href="#">Студентски стипендии</a></li>
-                                <li><a href="#">Студентски живот</a></li>
-                                <li><a href="#">Учебен отдел</a></li>
-                                <li><a href="#">Е-студент</a></li>
+                                <li><a href="#">{t("Студентско кредитиране")}</a></li>
+                                <li><a href="#">{t("Студентски стипендии")}</a></li>
+                                <li><a href="#">{t("Студентски живот")}</a></li>
+                                <li><a href="#">{t("Учебен отдел")}</a></li>
+                                <li><a href="#">{t("Е-студент")}</a></li>
                             </ul>
                         </td>
                         <td>
                             <ul className={styles.universityInfoList}>
-                                <li><a href="#">Научни издания</a></li>
-                                <li><a href="#">Проекти</a></li>
-                                <li><a href="#">Научна е-библиотека</a></li>
-                                <li><a href="#">Конкурси</a></li>
-                                <li><a href="#">Е-преподавател</a></li>
+                                <li><a href="#">{t("Научни издания")}</a></li>
+                                <li><a href="#">{t("Проекти")}</a></li>
+                                <li><a href="#">{t("Научна е-библиотека")}</a></li>
+                                <li><a href="#">{t("Конкурси")}</a></li>
+                                <li><a href="#">{t("Е-преподавател")}</a></li>
                             </ul>
                         </td>
                     </tr>
                     </tbody>
                 </table>
-
-
-                {/*<ul className={styles.universityInfoList}>*/}
-                {/*    <h4>За Университета</h4>*/}
-                {/*    <a href={"#"}>*/}
-                {/*        <li>Ръководство</li>*/}
-                {/*    </a>*/}
-                {/*    <a href={"#"}>*/}
-                {/*        <li>Акре дитации и сертификати</li>*/}
-                {/*    </a>*/}
-                {/*    <a href={"#"}>*/}
-                {/*        <li>Програма Еразъм+</li>*/}
-                {/*    </a>*/}
-                {/*    <a href={"#"}>*/}
-                {/*        <li>Политики и декларации</li>*/}
-                {/*    </a>*/}
-                {/*</ul>*/}
-                {/*<ul className={styles.universityInfoList}>*/}
-                {/*    <h4>Информационни Ресурси</h4>*/}
-                {/*    <a href={"#"}>*/}
-                {/*        <li>Електронни услиги</li>*/}
-                {/*    </a>*/}
-                {/*    <a href={"#"}>*/}
-                {/*        <li>Електронно обучение</li>*/}
-                {/*    </a>*/}
-                {/*    <a href={"#"}>*/}
-                {/*        <li>Университетска библиотека</li>*/}
-                {/*    </a>*/}
-                {/*    <a href={"#"}>*/}
-                {/*        <li>Кариерен център</li>*/}
-                {/*    </a>*/}
-                {/*    <a href={"#"}>*/}
-                {/*        <li>Инструкция за достъп</li>*/}
-                {/*    </a>*/}
-                {/*</ul>*/}
-                {/*<ul className={styles.universityInfoList}>*/}
-                {/*    <h4>Студенти</h4>*/}
-                {/*    <a href={"#"}>*/}
-                {/*        <li>Студентско кредитиране</li>*/}
-                {/*    </a>*/}
-                {/*    <a href={"#"}>*/}
-                {/*        <li>Студетски стипендии</li>*/}
-                {/*    </a>*/}
-                {/*    <a href={"#"}>*/}
-                {/*        <li>Студентски живот</li>*/}
-                {/*    </a>*/}
-                {/*    <a href={"#"}>*/}
-                {/*        <li>Учебен отдел</li>*/}
-                {/*    </a>*/}
-                {/*    <a href={"#"}>*/}
-                {/*        <li>Е-студент</li>*/}
-                {/*    </a>*/}
-                {/*</ul>*/}
-                {/*<ul className={styles.universityInfoList}>*/}
-                {/*    <h4>Преподаватели</h4>*/}
-                {/*    <a href={"#"}>*/}
-                {/*        <li>Научни издания</li>*/}
-                {/*    </a>*/}
-                {/*    <a href={"#"}>*/}
-                {/*        <li>Проекти</li>*/}
-                {/*    </a>*/}
-                {/*    <a href={"#"}>*/}
-                {/*        <li>Научна е-библиотека</li>*/}
-                {/*    </a>*/}
-                {/*    <a href={"#"}>*/}
-                {/*        <li>Конкурси</li>*/}
-                {/*    </a>*/}
-                {/*    <a href={"#"}>*/}
-                {/*        <li>Е-преподавател</li>*/}
-                {/*    </a>*/}
-                {/*</ul>*/}
             </div>
         </>
     )
