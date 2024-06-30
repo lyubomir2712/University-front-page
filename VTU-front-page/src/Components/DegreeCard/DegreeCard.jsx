@@ -24,7 +24,7 @@ function DegreeCard() {
                 <a href={"#"}><img className={styles.cardImage} src={BachelorHat} alt="degree picture"></img></a>
                 <hr/>
                 <br/>
-                <a href={"#"}><h2 className={styles.cardTitle}>Бакалавърски програми</h2></a>
+                <a href={"#"}><h2 className={styles.cardTitle}>{t("Бакалавърски програми")}</h2></a>
                 {/*<p className={styles.cardText}>4 години</p>*/}
             </div>
 
@@ -32,7 +32,7 @@ function DegreeCard() {
                 <a href={"#"}><img className={styles.cardImage} src={MastersHat} alt="degree picture"></img></a>
                 <hr/>
                 <br/>
-                <a href={"#"}><h2 className={styles.cardTitle}>Магистърски програми</h2></a>
+                <a href={"#"}><h2 className={styles.cardTitle}>{t("Магистърски програми")}</h2></a>
                 {/*<p className={styles.cardText}>1.5 години</p>*/}
             </div>
 
@@ -40,7 +40,7 @@ function DegreeCard() {
                 <a href={"#"}><img className={styles.cardImage} src={PhDhat} alt="degree picture"></img></a>
                 <hr/>
                 <br/>
-                <a href={"#"}><h2 className={styles.cardTitle}>Докторски програми</h2></a>
+                <a href={"#"}><h2 className={styles.cardTitle}>{t("Докторски програми")}</h2></a>
 
                 {/*<p className={styles.cardText}>3 години</p>*/}
             </div>
@@ -49,7 +49,7 @@ function DegreeCard() {
                 <a href={"#"}><img className={styles.cardImage} src={Laptop} alt="degree picture"></img></a>
                 <hr/>
                 <br/>
-                <a href={"#"}><h2 className={styles.cardTitle}>Дистанционно обучение</h2></a>
+                <a href={"#"}><h2 className={styles.cardTitle}>{t("Дистанционно обучение")}</h2></a>
                 {/*<p className={styles.cardText}>4 години</p>*/}
             </div>
         </div>
