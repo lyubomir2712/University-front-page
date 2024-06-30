@@ -9,6 +9,19 @@ import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
+import {useTranslation} from "react-i18next";
+import {useState} from "react";
+import i18n from '../LanguageChange/LanguageChange.js';
+
+
+
+const toggleLanguage = () => {
+    const newLanguage = isEnglish ? "bg" : "en";
+    i18n.changeLanguage(newLanguage);
+    setIsEnglish(!isEnglish);
+}
+
+
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -16,7 +29,7 @@ const images = [
     {
         label: 'Запиши се във Великотърновския университет !',
         imgPath:
-            'https://www.uni-vt.bg/res/14157/%D0%A1%D1%82%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8.jpg',
+            ('https://www.uni-vt.bg/res/14157/%D0%A1%D1%82%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B8.jpg'),
     },
     {
         label: 'Откривай знанието, преобразявай бъдещето !',
@@ -36,6 +49,19 @@ const images = [
 ];
 
 function Carousel() {
+
+
+
+    const { t, i18n } = useTranslation();
+    const [isEnglish, setIsEnglish] = useState(true);
+
+    const toggleLanguage = () => {
+        const newLanguage = isEnglish ? "bg" : "en";
+        i18n.changeLanguage(newLanguage);
+        setIsEnglish(!isEnglish);
+    }
+
+
     const theme = useTheme();
     const [activeStep, setActiveStep] = React.useState(0);
     const maxSteps = images.length;

@@ -7,6 +7,8 @@ import SearchIcon from "../../../public/SearchIcon.svg";
 
 import AuthenticaitonIcon from "../../../public/AuthenticationIcon.svg";
 import styles from './AuthenticationModal.module.css'
+import {useTranslation} from "react-i18next";
+import {useState} from "react";
 
 
 
@@ -31,6 +33,17 @@ const modal = {
 
 
 export default function AuthenticationModal() {
+
+    const { t, i18n } = useTranslation();
+    const [isEnglish, setIsEnglish] = useState(true);
+
+    const toggleLanguage = () => {
+        const newLanguage = isEnglish ? "bg" : "en";
+        i18n.changeLanguage(newLanguage);
+        setIsEnglish(!isEnglish);
+    }
+
+
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -47,18 +60,18 @@ export default function AuthenticationModal() {
             >
                 <Box sx={style}>
                     <Typography id="modal-modal-title" variant="h6" component="h2">
-                        Вход
+                        {t("Вход")}
                         <hr/>
                     </Typography>
                     <Typography style={modal} id="modal-modal-description" sx={{mt: 2}}>
                         <button className={styles.modalButton}>
-                            Е-студент
+                            {t("Е-студент")}
                         </button>
                         {/*<button className={styles.modalButton}>*/}
                         {/*    Е-кандидат студент*/}
                         {/*</button>*/}
                         <button className={styles.modalButton}>
-                            E-преподавател
+                            {t("E-преподавател")}
                         </button>
                     </Typography>
                 </Box>
