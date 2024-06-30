@@ -24,14 +24,13 @@ function News() {
     return (
 
         <div className={styles.newsSection}>
-            <h2>Новини</h2>
+            <h2>{t("Новини")}</h2>
             <div className={styles.newsContainer}>
                 <a href={"#"}>
                     <div className={styles.new}>
                         <img src={NewsImage1} alt="degree picture"></img>
                         <hr/>
-                        <p className={styles.cardTitle}>Китайска делегация посети Великотърновския
-                            университет</p>
+                        <p className={styles.cardTitle}>{t("Китайска делегация посети Великотърновския университет")}</p>
 
                     </div>
                 </a>
@@ -40,8 +39,7 @@ function News() {
                     <div className={styles.new}>
                         <img src={NewsImage2} alt="degree picture"></img>
                         <hr/>
-                        <p className={styles.cardTitle}>Международен летен семинар по български език и
-                            култура</p>
+                        <p className={styles.cardTitle}>{t("Международен летен семинар по български език и култура")}</p>
 
                     </div>
                 </a>
@@ -50,7 +48,7 @@ function News() {
                     <div className={styles.new}>
                         <img src={NewsImage3} alt="degree picture"></img>
                         <hr/>
-                        <p className={styles.cardTitle}>ПРИЕМ МАГИСТЪР 2024 г.</p>
+                        <p className={styles.cardTitle}>{t("ПРИЕМ МАГИСТЪР 2024 г.")}</p>
 
                     </div>
                 </a>
@@ -59,8 +57,7 @@ function News() {
                     <div className={styles.new}>
                         <img src={NewsImage4} alt="degree picture"></img>
                         <hr/>
-                        <p className={styles.cardTitle}>Придобиване на ПКС във Великотърновския
-                            университет</p>
+                        <p className={styles.cardTitle}>{t("Придобиване на ПКС във Великотърновския университет")}</p>
 
                     </div>
                 </a>

@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { styled } from '@mui/system';
 import CalendarIcon from './../../../public/CalendarIcon.svg'
 import ClockIcon from './../../../public/ClockIcon.svg'
 import PinIcon from './../../../public/PinIcon.svg'
+import i18n from '../LanguageChange/LanguageChange.js';
+import {useTranslation} from "react-i18next";
 
 const EventsSectionContainer = styled('div')({
     backgroundColor: 'white',
@@ -85,73 +87,82 @@ const ViewAllBtn = styled('button')({
 });
 
 function EventsSection() {
+    const { t, i18n } = useTranslation();
+    const [isEnglish, setIsEnglish] = useState(true);
+
+    const toggleLanguage = () => {
+        const newLanguage = isEnglish ? "bg" : "en";
+        i18n.changeLanguage(newLanguage);
+        setIsEnglish(!isEnglish);
+    }
+
+
     return (
         <EventsSectionContainer>
-            <Heading>Събития</Heading>
+            <Heading>{t("Събития")}</Heading>
             <Event href = "#">
                 <EventDate>
                     <div>
-                        <EventDateSpan>НАЧАЛО</EventDateSpan>
+                        <EventDateSpan>{t("НАЧАЛО")}</EventDateSpan>
                         <EventDateSpanBold>25</EventDateSpanBold>
-                        <EventDateSpan>ЮНИ <hr/></EventDateSpan>
+                        <EventDateSpan>{t("ЮНИ")}<hr/></EventDateSpan>
                     </div>
                     <div>
-                        <EventDateSpan>КРАЙ</EventDateSpan>
+                        <EventDateSpan>{t("КРАЙ")}</EventDateSpan>
                         <EventDateSpanBold>28</EventDateSpanBold>
-                        <EventDateSpan>ЮНИ</EventDateSpan>
+                        <EventDateSpan>{t("ЮНИ")}</EventDateSpan>
                     </div>
                 </EventDate>
                 <EventDetails>
-                    <h3>Академия по предприемачество в земеделието</h3>
-                    <p><img src={CalendarIcon} alt={"calendar icon"}/> 25 ЮНИ 2024 - 28 ЮНИ 2024 | <img
-                        src={PinIcon} alt={"pin icon"}/> ВЕЛИКОТЪРНОВСКИ
-                        УНИВЕРСИТЕТ - &quot; СВ. СВ. КИРИЛ И МЕТОДИЙ &quot;</p>
-                    <p>Първото издание ще се проведе от 25 до 28 юни 2024 година - град Велико Търново във Великотърноски университет - &quot; Св. св. Кирил и Методий &quot;</p>
+                    <h3>{t("Академия по предприемачество в земеделието")}</h3>
+                    <p><img src={CalendarIcon} alt={"calendar icon"}/> {t("25 ЮНИ 2024 - 28 ЮНИ 2024")} | <img
+                        src={PinIcon} alt={"pin icon"}/> {t('ВЕЛИКОТЪРНОВСКИ УНИВЕРСИТЕТ -  "СВ. СВ. КИРИЛ И МЕТОДИЙ"')}</p>
+                    <p>{t('Първото издание ще се проведе от 25 до 28 юни 2024 година - град Велико Търново във Великотърноски университет - "Св. св. Кирил и Методий"')}</p>
                 </EventDetails>
             </Event>
             <Event href={"#"}>
                 <EventDate>
                     <div>
                         <EventDateSpanBold>02</EventDateSpanBold>
-                        <EventDateSpan>ЮЛИ</EventDateSpan>
+                        <EventDateSpan>{t("ЮЛИ")}</EventDateSpan>
                     </div>
                 </EventDate>
                 <EventDetails>
-                    <h3>Публична защита на дисертационен труд</h3>
-                    <p><img src={CalendarIcon} alt={"calendar icon"}/> 02 ЮЛИ 2024 | <img src={ClockIcon}
+                    <h3>{t("Публична защита на дисертационен труд")}</h3>
+                    <p><img src={CalendarIcon} alt={"calendar icon"}/> 02 {t("ЮЛИ")} 2024 | <img src={ClockIcon}
                                                                                           alt={"clock icon"}/> 13:00
-                        - 15:00 | <img src={PinIcon} alt={"calendar icon"}/> ЗАЛА 320</p>
+                        - 15:00 | <img src={PinIcon} alt={"calendar icon"}/> {t("ЗАЛА")} 320</p>
                 </EventDetails>
             </Event>
             <Event href={"#"}>
                 <EventDate>
                     <div>
                         <EventDateSpanBold>02</EventDateSpanBold>
-                        <EventDateSpan>ЮЛИ</EventDateSpan>
+                        <EventDateSpan>{t("ЮЛИ")}</EventDateSpan>
                     </div>
                 </EventDate>
                 <EventDetails>
-                    <h3>Публична защита на дисертационен труд</h3>
-                    <p><img src={CalendarIcon} alt={"calendar icon"}/> 02 ЮЛИ 2024 | <img src={ClockIcon}
+                    <h3>{t("Публична защита на дисертационен труд")}</h3>
+                    <p><img src={CalendarIcon} alt={"calendar icon"}/> 02 {t("ЮЛИ")} 2024 | <img src={ClockIcon}
                                                                                           alt={"clock icon"}/> 14:00
-                        - 16:00 | <img src={PinIcon} alt={"pin icon"}/> ЗАЛА 205</p>
+                        - 16:00 | <img src={PinIcon} alt={"pin icon"}/> {t("ЗАЛА")} 205</p>
                 </EventDetails>
             </Event>
             <Event href={"#"}>
                 <EventDate>
                     <div>
                         <EventDateSpanBold>18</EventDateSpanBold>
-                        <EventDateSpan>ОКТ</EventDateSpan>
+                        <EventDateSpan>{t("ОКТ")}</EventDateSpan>
                     </div>
                 </EventDate>
                 <EventDetails>
-                    <h3>Конференция на тема Правото и бизнесът в съвременното общество</h3>
-                    <p><img src={CalendarIcon} alt={"calendar icon"}/> 18 ОКТ 2024 | <img src={CalendarIcon}
+                    <h3>{t("Конференция на тема Правото и бизнесът в съвременното общество")}</h3>
+                    <p><img src={CalendarIcon} alt={"calendar icon"}/> 18 {t("ОКТ")} 2024 | <img src={CalendarIcon}
                                                                                           alt={"clock icon"}/> 09:30
-                        - 13:00 | <img src={PinIcon} alt={"pin icon"}/> ЗАЛА 1</p>
+                        - 13:00 | <img src={PinIcon} alt={"pin icon"}/> {t("ЗАЛА")} 1</p>
                 </EventDetails>
             </Event>
-            <ViewAllBtn>Виж всички</ViewAllBtn>
+            <ViewAllBtn>{t("Виж всички")}</ViewAllBtn>
         </EventsSectionContainer>
     );
 }
