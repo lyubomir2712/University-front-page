@@ -53,7 +53,7 @@ function Footer() {
                             <td><img src={TelephoneLogo} alt={"Telephone logo"}/> О62 / 618 206</td>
                         </tr>
                         <tr>
-                        <td><img src={EmailLogo} alt={"Email logo"}/> rector@live.uni-vt.bg</td>
+                            <td><img src={EmailLogo} alt={"Email logo"}/> rector@live.uni-vt.bg</td>
                         </tr>
                         <tr>
                             <td><img src={MapLogo} alt={"Map logo"}/> {t("Карта")}</td>
@@ -71,7 +71,9 @@ function Footer() {
                         <li><a href={"#"} className={styles.link}>{t("Контакти")}</a></li>
                     </ul>
                 </div>
-                <p className={styles.AdditionsText}>© 2024 {t("Великотърновски университет Св. св. Кирил и Методий")}; | &nbsp; <a href={"#"}> {t("Всички права запазени Поверителност и Бисквитки")}</a> &nbsp; | &nbsp; <a href={"#"}>{t("Карта на сайта.")}</a></p>
+                <p className={styles.AdditionsText}>© 2024 {t("Великотърновски университет Св. св. Кирил и Методий")};
+                    | &nbsp; <a href={"#"}> {t("Всички права запазени Поверителност и Бисквитки")}</a> &nbsp; | &nbsp;
+                    <a href={"#"}>{t("Карта на сайта.")}</a></p>
             </div>
 
         </div>

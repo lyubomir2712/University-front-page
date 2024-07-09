@@ -51,8 +51,6 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
-
     margin: 0;
 }
 
@@ -99,14 +97,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
-
-
-
-
-
-
-
 
 .link{
     text-decoration: none;
@@ -137,8 +129,6 @@
 .link:hover::before {
     transform: scaleX(1);
 }
-
-
 
 
 

@@ -7,7 +7,8 @@ ul{
 }
 
 li{
-    margin-right: 1.5rem;
+    margin-right: 1rem;
+    white-space: nowrap;
 }
 
 .logo{
