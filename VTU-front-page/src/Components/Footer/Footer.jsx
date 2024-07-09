@@ -45,14 +45,15 @@ function Footer() {
                 <div className={styles.Container}>
                     <table className={styles.Contacts}>
                         <tr>
-                            <td><img src={BankLogo} alt={"Bank logo"}/> {t("Ул. „Теодосий Търновски“ №2, Велико Търново 5003")}
+                            <td><img src={BankLogo}
+                                     alt={"Bank logo"}/> {t("Ул. „Теодосий Търновски“ №2, Велико Търново 5003")}
                             </td>
                         </tr>
                         <tr>
                             <td><img src={TelephoneLogo} alt={"Telephone logo"}/> О62 / 618 206</td>
                         </tr>
                         <tr>
-                            <td><img src={EmailLogo} alt={"Email logo"}/> rector@live.uni-vt.bg</td>
+                        <td><img src={EmailLogo} alt={"Email logo"}/> rector@live.uni-vt.bg</td>
                         </tr>
                         <tr>
                             <td><img src={MapLogo} alt={"Map logo"}/> {t("Карта")}</td>
