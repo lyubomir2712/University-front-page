@@ -1,111 +1,70 @@
-/*.universityInfoContainer{*/
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*    justify-content: space-evenly;*/
-/*    margin-left: 6%;*/
-/*    margin-right: 10%;*/
-/*}*/
-
-/*.universityInfoList{*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    flex-wrap: wrap;*/
-/*}*/
-
-
-
-/*.universityInfoContainer table td, .universityInfoContainer table th{*/
-/*    width: 20%;*/
-/*    height: auto;*/
-/*    margin-right: 2rem;*/
-/*    border: 1px solid rgb(200, 198, 198);*/
-/*    align-items: center;*/
-/*}*/
-
-/*.universityInfoContainer table{*/
-/*    width: 100%;*/
-/*}*/
-
-/*.universityInfoContainer table td a{*/
-/*    font-weight: bold;*/
-/*}*/
-
-/*.universityInfoContainer table td a:hover{*/
-/*    color: purple;*/
-
-/*}*/
-
-
-
-/*.universityInfoContainer ul{*/
-/*    list-style-type: square;*/
-/*}*/
-
-
-
-
 .universityInfoContainer {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    border: 1px solid #000;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.universityInfoHeader {
-    grid-column: span 4;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #000;
-}
-
-.universityInfoContent {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(4, minmax(150px, 1fr)); /* Adjust width of columns */
+    gap: 1rem; /* Add gap between columns */
+    padding: 1rem; /* Add padding around the container */
+    box-sizing: border-box;
 }
 
 .universityInfoColumn {
+    border: 1px solid #ccc; /* Add border to columns */
+    padding: 0; /* Remove padding to keep columns aligned */
     display: flex;
     flex-direction: column;
+}
+
+.universityInfoHeader {
+    border: 1px solid #ccc; /* Add border to header cells */
+    padding: 1rem;
+    background-color: #f0f0f0; /* Light background for header */
+    text-align: center;
+    font-weight: bold;
 }
 
 .universityInfoList {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .universityInfoList li {
-    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc; /* Add border between list items */
+    padding: 0.5rem 1rem;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    display: block; /* Make list items display as block elements */
 }
 
 .universityInfoList li a {
     text-decoration: none;
-    color: #000;
+    color: #333;
+    display: block; /* Make links take up the full width */
 }
 
-@media (max-width: 992px) {
-    .universityInfoContainer,
-    .universityInfoContent {
-        grid-template-columns: repeat(2, 1fr);
-    }
+.universityInfoList li:last-child {
+    border-bottom: none; /* Remove border from last item */
 }
 
-@media (max-width: 576px) {
-    .universityInfoContainer,
-    .universityInfoContent {
-        grid-template-columns: 1fr;
-    }
+.universityInfoContainer div div a {
+    font-weight: bold;
+}
 
-    .universityInfoHeader {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+.universityInfoContainer div div a:hover {
+    color: purple;
 }
 
 
 
+/* Responsive layout */
+@media (max-width: 1024px) {
+    .universityInfoContainer {
+        grid-template-columns: repeat(2, 1fr); /* 2x2 grid */
+    }
+}
 
+@media (max-width: 600px) {
+    .universityInfoContainer {
+        grid-template-columns: 1fr; /* Single column */
+    }
+}
