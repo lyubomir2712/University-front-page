@@ -1,8 +1,10 @@
 .newsContainer{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.3rem;
+    justify-items: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 .newsSection{
@@ -38,7 +40,18 @@
 
 
 
+@media (max-width: 1024px) {
+    .newsContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
+
+@media (max-width: 600px) {
+    .newsContainer {
+        grid-template-columns: 1fr;
+    }
+}
 
 
 

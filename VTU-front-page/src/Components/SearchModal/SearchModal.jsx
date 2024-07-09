@@ -78,7 +78,7 @@ export default function SearchModal() {
                     {/*</Typography>*/}
 
                     <Typography style={modal} id="modal-modal-description" sx={{mt: 2}}>
-                        <input className={styles.modalInput} type={"text"} placeholder={"Търсене"}/>
+                        <input className={styles.modalInput} type={"text"} placeholder={t("Търсене")}/>
 
 
 
