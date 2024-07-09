@@ -1,15 +1,28 @@
 .modalButton{
     background-color: #f3df64;
     width: 2.5rem;
-    height: 1.9rem;
-    border-bottom-right-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
+    height: 2.5rem;
+    border-radius: 5rem;
+    position: absolute;
+    margin-left: 26rem;
+    border: none;
+}
+.modalButton img{
+    padding-top: 0.2rem;
+    height: 1.5rem;
+    width: auto;
 }
 
 .modalInput{
 
-    height: 1.5rem;
-    width: 17rem;
+    height: 3rem;
+    width: 25rem;
+    border-radius: 5rem;
+    padding: 0 30px 0 30px;
+    outline: none;
+    position: relative;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 
@@ -22,3 +35,6 @@
 .modalButton:hover{
     filter: brightness(0.8);
 }
+
+
+
