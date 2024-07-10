@@ -72,6 +72,40 @@ const en = {
     "Запиши се във Великотърновския университет !" : "Enroll at Veliko Tarnovo University !",
     'Откривай знанието, преобразявай бъдещето !' : 'Discover knowledge, transform the future!',
     'Ние успяваме заедно!' : 'We succeed together!',
+
+    "Статут, мисия, академичен профил": "Status, mission, academic profile",
+    "Акредитация и сертификати": "Accreditation and certificates",
+    "Ръководство на ВТУ": "VTU management",
+    "Настоятелство на ВТУ": "VTU Board of Trustees",
+    "Организационна структура": "Organizational structure",
+    "Правилници и декларации": "Regulations and declarations",
+    "Материална база": "Material base",
+    "Управление на качеството": "Quality management",
+    "Почетни доктори": "Honorary doctors",
+    "Почетна книга": "Honorary book",
+
+    "Център по юридически науки": "Center for Legal Sciences",
+    "Център по икономически и управлески науки": "Center for Economic and Management Sciences",
+    "Център по информатика и технически науки": "Center for Informatics and Technical Sciences",
+    "Център по хуманитарни науки": "Center for Humanities",
+
+    "Студентски такси": "Student fees",
+    "Студентски практики": "Student internships",
+    "Конференция за студентско научно творчество": "Conference on student scientific creativity",
+    "Студентски съвет": "Student council",
+    "Съобщения за студентите": "Announcements for students",
+    "Научни прояви": "Scientific events",
+    "Конкурси по ЗРАСРБ": "Competitions under ZRASRB",
+    "Съобщения за преподавателите": "Announcements for teachers",
+
+    "Международни договори за сътрудничество": "International Cooperation Agreements",
+    "Договори по програма Еразъм+": "Erasmus+ Program Agreements",
+    "Програма \"ЕРАЗЪМ+\"": "Erasmus+ Program",
+    "Катедра на ЮНЕСКО \"Права на човека и култура на мира\"": "UNESCO Chair \"Human Rights and Culture of Peace\"",
+    "Партньори по международни проекти": "Partners in International Projects",
+    "Правилници и документи": "Regulations and Documents",
+    "Студентски център за кариера и развитие": "Student Career and Development Center",
+    "Реализация на завършилите студенти": "Graduate Student Employment"
 }
 
 

@@ -71,18 +71,38 @@ nav{
 }
 
 
-/*@media (max-width: 1024px) {*/
-/*    ul {*/
-/*        flex-wrap: wrap; !* Allow items to wrap to the next line *!*/
-/*        justify-content: center; !* Center the items *!*/
-/*    }*/
 
-/*    li {*/
-/*        flex: 1 1 45%; !* Adjust the flex basis to allow two items per row *!*/
-/*        margin-right: 0.5rem; !* Adjust margin for better spacing *!*/
-/*        margin-bottom: 1rem;*/
-/*    }*/
-/*}*/
+
+ul.dropdown li{
+    display: block;
+}
+
+ul.dropdown {
+    /*padding-left: 0;*/
+    margin-left: 0.25rem;
+
+    width: auto;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    background-color: white;
+}
+
+ul.dropdown li{
+    padding-bottom: 1rem;
+}
+
+ul.dropdown li:first-child{
+    padding-top: 1rem;
+}
+
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+
+
 
 
 

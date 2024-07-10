@@ -1,22 +1,22 @@
 .universityInfoContainer {
     display: grid;
-    grid-template-columns: repeat(4, minmax(150px, 1fr)); /* Adjust width of columns */
-    gap: 1rem; /* Add gap between columns */
-    padding: 1rem; /* Add padding around the container */
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
     box-sizing: border-box;
 }
 
 .universityInfoColumn {
-    border: 1px solid #ccc; /* Add border to columns */
-    padding: 0; /* Remove padding to keep columns aligned */
+    border: 1px solid #ccc;
+    padding: 0;
     display: flex;
     flex-direction: column;
 }
 
 .universityInfoHeader {
-    border: 1px solid #ccc; /* Add border to header cells */
+    border: 1px solid #ccc;
     padding: 1rem;
-    background-color: #f0f0f0; /* Light background for header */
+    background-color: #f0f0f0;
     text-align: center;
     font-weight: bold;
 }
@@ -52,6 +52,7 @@
 
 .universityInfoList li a:hover {
     color: purple;
+    border-color: purple;
 }
 
 
