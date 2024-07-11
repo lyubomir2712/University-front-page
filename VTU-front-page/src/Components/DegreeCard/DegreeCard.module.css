@@ -54,13 +54,13 @@
     }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1500px) {
     .card {
         width: 12rem;
     }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1270px) {
     .card {
         width: 10rem;
     }
@@ -68,19 +68,15 @@
 
 @media (max-width: 1150px) {
     .card {
-        width: 8rem;
+        width: 7rem;
     }
 }
 
 @media (max-width: 1050px) {
     .card {
-        width: 6rem;
+        width: 7rem;
     }
 }
-
-
-
-
 
 
 @media (max-width: 1024px) {
@@ -92,9 +88,22 @@
     }
 }
 
-@media (max-width: 900px) {
-    .cardContainer {
-        width: 20rem;
+@media (max-width: 800px) {
+    .card {
+        width: 13rem;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .card {
+        width: 11rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .card {
+        width: 9rem;
     }
 }
 
