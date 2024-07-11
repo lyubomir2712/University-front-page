@@ -10,16 +10,12 @@ li{
     margin-right: 1rem;
     white-space: nowrap;
 }
-.firstLink{
-    margin-left: 9rem;
-}
 
 .logo{
     height: 8.3rem;
     width: 8.3rem;
     border-radius: 50%;
     clip-path: circle(50% at 50% 50%);
-    /*border: 0.4rem solid #a282d5;*/
     box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.5);
     transition: filter 0.5s ease;
     top: 0;
@@ -74,7 +70,7 @@ nav{
     height: 4.2rem;
     padding-top: 0.1rem;
     margin-top: 0;
-
+    padding-left: 9rem;
 }
 
 .heading{
