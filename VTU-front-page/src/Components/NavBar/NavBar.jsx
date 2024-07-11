@@ -28,7 +28,7 @@ function NavBar() {
 
                 <li><a href={"#"} className={styles.link}>{t('ВТУ')}</a>
                     <ul className={styles.dropdown}>
-                        <li><a href={"#"}>{t("Статут, мисия, академичен профил")}</a></li>
+                        <li><a className={styles.test} href={"#"}>{t("Статут, мисия, академичен профил")}</a></li>
                         <li><a href={"#"}>{t("Акредитация и сертификати")}</a></li>
                         <li><a href={"#"}>{t("Ръководство на ВТУ")}</a></li>
                         <li><a href={"#"}>{t("Настоятелство на ВТУ")}</a></li>

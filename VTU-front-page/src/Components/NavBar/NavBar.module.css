@@ -41,19 +41,19 @@ li{
 }
 
 
-.link::before {
+ul.dropdown a::before {
     content: "";
     position: absolute;
-    width: 93%;
+    width: 100%;
     height: 2px;
     background: black;
     border-radius: 5px;
     transform: scaleX(0);
     transition: all 0.6s ease;
-    bottom: 0;
+    bottom: 0.5rem;
 }
 
-.link:hover::before {
+ul.dropdown a:hover::before {
     transform: scaleX(1);
 }
 
@@ -64,6 +64,8 @@ nav{
     background-color: #f3df64;
     border-radius: 0.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /*position: fixed;*/
+    /*z-index: 998;*/
 }
 
 .heading{
@@ -78,18 +80,19 @@ ul.dropdown li{
 }
 
 ul.dropdown {
-    /*padding-left: 0;*/
+    padding-left: 1rem;
     margin-left: 0.25rem;
-
     width: auto;
     position: absolute;
     z-index: 999;
     display: none;
-    background-color: white;
+    background-color: #f3df64;
+    box-shadow: 0.5rem 0.5rem 0 black;
 }
 
 ul.dropdown li{
     padding-bottom: 1rem;
+    position: relative;
 }
 
 ul.dropdown li:first-child{
@@ -101,6 +104,9 @@ ul li:hover ul.dropdown {
     display: block;
 }
 
+ul.dropdown a:hover{
+    color: purple;
+}
 
 
 
