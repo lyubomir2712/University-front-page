@@ -10,16 +10,21 @@ li{
     margin-right: 1rem;
     white-space: nowrap;
 }
+.firstLink{
+    margin-left: 9rem;
+}
 
 .logo{
-    height: 8rem;
-    width: 8rem;
+    height: 8.3rem;
+    width: 8.3rem;
     border-radius: 50%;
     clip-path: circle(50% at 50% 50%);
-    border: 0.2rem solid #a282d5;
+    /*border: 0.4rem solid #a282d5;*/
     box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.5);
     transition: filter 0.5s ease;
-    margin-top: 0.25rem;
+    top: 0;
+    position: absolute;
+    margin-left: 0.5rem;
 }
 
 .logo:hover{
@@ -62,14 +67,22 @@ ul.dropdown a:hover::before {
 
 nav{
     background-color: #f3df64;
-    border-radius: 0.5rem;
+    /*border-radius: 0.5rem;*/
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     /*position: fixed;*/
     /*z-index: 998;*/
+    height: 4.2rem;
+    padding-top: 0.1rem;
+    margin-top: 0;
+
 }
 
 .heading{
     font-style: italic;
+    margin-left: 11.5rem;
+    text-decoration: underline;
+    padding-bottom: 0;
+    margin-bottom: 0.3rem;
 }
 
 

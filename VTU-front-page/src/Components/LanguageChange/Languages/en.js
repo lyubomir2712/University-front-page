@@ -85,7 +85,7 @@ const en = {
     "Почетна книга": "Honorary book",
 
     "Център по юридически науки": "Center for Legal Sciences",
-    "Център по икономически и управлески науки": "Center for Economic and Management Sciences",
+    "Център по икономически и управленски науки": "Center for Economic and Management Sciences",
     "Център по информатика и технически науки": "Center for Informatics and Technical Sciences",
     "Център по хуманитарни науки": "Center for Humanities",
 
